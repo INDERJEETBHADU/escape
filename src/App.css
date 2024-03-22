@@ -1,38 +1,240 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.color_blue {
+  color: #26529C;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.ol,
+ul {
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav_top {
+  width: 100%;
+  height: 50px;
+  background-color: #26529C;
   display: flex;
-  flex-direction: column;
+  justify-content: end;
+}
+
+.phn_box {
+  background: #CBD329;
+  max-width: 56px;
+  width: 100%;
+  height: 50px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+}
+
+.mail_box {
+  background: #257DD2;
+  max-width: 69px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cross_icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mb_4 {
+  margin-bottom: 4px;
+}
+
+.text_white {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.login_btn {
+  background: #26529C;
+  padding: 15px 20px;
+  border-radius: 60px;
+  border: 1px solid transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.login_btn_outer {
+  background: #26529C;
+  padding: 15px 20px;
+  border-radius: 60px;
+  border: 1px solid transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+
+.nav_box {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 19px;
+}
+
+.nav_links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nav_link_propty {
+  display: flex;
+  align-items: center;
+  gap: 3;
+}
+
+.coursor_pointer {
+  cursor: pointer;
+}
+
+.right_100 {
+  right: -100% !important;
+}
+
+.end_0 {
+  right: 0 !important;
+}
+
+/* vishal--card-css--here */
+.Indietro-box {
+  max-width: 440px;
+  width: 100%;
+  border: 1px solid #D7D7D7;
+  background-color: #1E1E1E;
+  border-radius: 10px;
+  border: 1px 0px 0px 0px;
+  padding: 18px 16px 20px 14px;
+}
+
+.heading1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: black;
+  margin-top: 6px;
+}
+
+.heading2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 0;
+  color: #26529C;
+}
+
+.loction {
+  display: flex;
+  gap: 5px;
+  margin-top: 15.61px;
+  align-items: center;
+}
+
+img[alt="Indietro"] {
+  border-radius: 12px;
+  width: 100%;
+}
+
+.container {
+  max-width: 1130px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* vishal--card-css++++ends+++--here */
+
+
+@media (min-width:576px) {
+  .login_btn {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .login_btn_outer {
+    display: block;
   }
+}
+
+
+@media (min-width:992px) {
+  .cross_icon {
+    display: none;
+  }
+}
+
+@media (min-width:1024px) {
+  .login_btn {
+    padding: 20px 40px;
+  }
+}
+
+@media (min-width:1200px) {
+  .nav_links {
+    gap: 40px;
+  }
+
+  .nav_box {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+}
+
+@media (max-width:992px) {
+  .menu {
+    z-index: 9;
+  }
+
+  .mobile-view {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    z-index: 6;
+    transition: all 300ms linear;
+  }
+
 }
